@@ -1,8 +1,4 @@
-/* style.css - IEEE Student Branch Professional Website
-   Clean, responsive layout using CSS Grid/Flexbox
-   Professional institutional design with smooth animations
-   Fully accessible and semantic HTML styling
-*/
+
 
 :root{
   --ieee-blue:#0a57a4;
@@ -65,6 +61,71 @@ body{
   text-decoration:none;
   letter-spacing:-0.5px;
   transition:var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.logo-img {
+  height: 40px; 
+  max-height: 60px;     
+  width: auto;
+  margin: 5px 0;
+}
+.hero-logo {
+  background: linear-gradient(90deg, #0a57a4, #63a7e0);
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 18px;
+  color: white;
+  overflow: hidden;
+
+  /* float animation for box */
+  animation: floatBox 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatBox {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
+
+.logo-box {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.logo-scroll {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  /* continuous scroll animation */
+  animation: scrollLeft 15s linear infinite;
+}
+
+.logo-scroll .logo {
+  height: 80px;
+  width: auto;
+}
+
+/* Continuous right-to-left scrolling */
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.hero-logo h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-logo p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.stacked-logo {
+  display: block;
 }
 .logo:hover{
   color:var(--ieee-dark-blue);

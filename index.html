@@ -14,10 +14,12 @@
   <div class="container header-inner">
 
     <a class="logo" href="index.html">
-      <img src="C:\Users\fathi\Downloads\IEEE_blue.png" alt="IEEE " class="logo-img"><br>
-      <img src="C:\Users\fathi\Downloads\SB Logo.png" alt="IEEE SB STM " class="logo-img">
-    </a>
+  <img src="IEEE_blue.png" alt="IEEE" class="logo-img">
+  <img src="SB Logo.png" alt="IEEE SB STM" class="logo-img">
+</a>
 
+
+   
     <nav class="main-nav" id="mainNav">
       <a href="index.html">Home</a>
       <a href="about-ieee.html">About IEEE</a>
@@ -53,20 +55,23 @@
           </ul>
         </div>
         <div class="hero-art">
-          <!-- professional SVG placeholder -->
-          <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="IEEE STM illustration">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="1">
-                <stop offset="0" stop-color="#0a57a4"/>
-                <stop offset="1" stop-color="#63a7e0"/>
-              </linearGradient>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#g1)" rx="18"/>
-            <g fill="#fff" font-family="Inter, sans-serif">
-              <text x="50%" y="44%" font-size="26" text-anchor="middle">IEEE SB STM</text>
-              <text x="50%" y="58%" font-size="14" text-anchor="middle">St. Thomas College of Engineering & Technology, Kannur</text>
-            </g>
-          </svg>
+          <section class="hero-logo">
+            <!-- HERO / LOGO SCROLLER WITH FLOAT -->
+            <section class="hero-logo">
+              <div class="logo-box">
+                <div class="logo-scroll">
+                  <!-- First set of logos -->
+                  <img src="IEEE_blue.png" alt="IEEE Logo" class="logo">
+                  <img src="SB Logo.png" alt="SB Logo" class="logo">
+                  <!-- Duplicate the same set for seamless scroll -->
+                  <img src="IEEE_blue.png" alt="IEEE Logo" class="logo">
+                  <img src="SB Logo.png" alt="SB Logo" class="logo">
+                </div>
+              </div>
+            
+              <p>St. Thomas College of Engineering & Technology, Kannur</p>
+            </section>
+
         </div>
       </div>
     </section>
@@ -167,36 +172,47 @@
     </section>
 
 
-    <!-- EVENTS -->
-    <section id="events" class="section">
-      <div class="container">
-        <h2>Events & Activities</h2>
-        <p class="section-intro">A selection of past and upcoming events organised by IEEE SB STM.</p>
-        <div class="timeline">
-          <div class="event">
-            <time>Dec 2023</time>
-            <div class="event-body">
-              <h4>Branch Inauguration</h4>
-              <p>Official formation of IEEE SB STM and inaugural meet with faculty and students.</p>
-            </div>
-          </div>
-          <div class="event">
-            <time>Mar 2024</time>
-            <div class="event-body">
-              <h4>IoT Workshop</h4>
-              <p>Hands-on workshop introducing IoT platforms and sensor integration.</p>
-            </div>
-          </div>
-          <div class="event">
-            <time>Nov 2024</time>
-            <div class="event-body">
-              <h4>Intercollege Hackathon</h4>
-              <p>24-hour hackathon with mentorship from industry professionals.</p>
-            </div>
-          </div>
+<!-- EVENTS -->
+<section id="events" class="section">
+  <div class="container">
+    <h2>Events & Activities</h2>
+    <p class="section-intro">A selection of past and notable events organised by IEEE SB STM.</p>
+    
+    <div class="timeline">
+      <!-- Event 1 -->
+      <div class="event">
+        <time>Dec 2023</time>
+        <div class="event-body">
+          <h4>Branch Inauguration</h4>
+          <p>Official formation of IEEE SB STM and inaugural meet with faculty, students, and IEEE officials.</p>
         </div>
       </div>
-    </section>
+
+      <!-- Event 2 -->
+      <div class="event">
+        <time>Feb 22, 2025</time>
+        <div class="event-body">
+          <h4>Workshop on Product Design</h4>
+          <p>One-day workshop led by Mr. Abhinav Rajeev on design thinking, prototyping, and idea-pitching. Students actively participated in discussions and exercises.</p>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="event">
+        <time>Sep 13, 2025</time>
+        <div class="event-body">
+          <h4>Online Workshop: Fundamentals of Blockchain</h4>
+          <p>An interactive online session covering blockchain basics, smart contracts, and real-world applications, conducted for S3, S5, and S7 students along with IEEE members.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 
     <!-- ACHIEVEMENTS -->
     <section id="achievements" class="section alt">
