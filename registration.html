@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Event Registration | IEEE SB STM</title>
+  <meta name="description" content="Register for IEEE SB STM events and workshops.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">IEEE SB STM</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about-ieee.html">About IEEE</a>
+        <a href="about-sb.html">About SB</a>
+        <a href="societies.html">Societies</a>
+        <a href="excom.html">ExCom</a>
+        <a href="events.html">Events</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Event Registration</h1>
+        <p>Register for our upcoming events and workshops</p>
+      </div>
+    </section>
+
+    <!-- REGISTRATION FORM SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="registration-form-wrapper">
+          <h2>Register for Events</h2>
+          
+          <!-- Event Info Display -->
+          <div id="eventInfoDisplay" style="display:none; background: linear-gradient(135deg, rgb(10, 87, 164) 0%, rgb(7, 42, 95) 100%); color: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <p style="margin: 0; font-size: 0.95rem; opacity: 0.9;">You are registering for:</p>
+            <h3 id="eventDisplayName" style="margin: 0.5rem 0 0 0; font-size: 1.5rem;">Loading...</h3>
+          </div>
+          
+          <p class="form-subtitle">Fill in your details to secure your spot in our events</p>
+          
+          <div class="registration-form-container">
+            <form id="eventRegistrationForm" class="event-registration-form">
+              <div class="form-group">
+                <label for="eventName">Event Name *</label>
+                <input type="text" id="eventName" name="eventName" readonly style="background-color: #f5f5f5; cursor: not-allowed;">
+                <p style="font-size: 0.85rem; color: #666; margin-top: 0.25rem;">Auto-filled from the event you selected</p>
+              </div>
+
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+
+              <div class="form-group">
+                <label>Branch *</label>
+                <div class="radio-group radio-group-vertical">
+                  <label class="radio-label">
+                    <input type="radio" name="branch" value="cse" required>
+                    <span>CSE</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="branch" value="ece" required>
+                    <span>ECE</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="branch" value="me" required>
+                    <span>ME</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="branch" value="ce" required>
+                    <span>CE</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="branch" value="cd" required>
+                    <span>CD</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Batch *</label>
+                <div class="radio-group radio-group-vertical">
+                  <label class="radio-label">
+                    <input type="radio" name="batch" value="2025-2029" required>
+                    <span>2025–2029</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="batch" value="2024-2028" required>
+                    <span>2024–2028</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="batch" value="2023-2027" required>
+                    <span>2023–2027</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="batch" value="2022-2026" required>
+                    <span>2022–2026</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>IEEE Membership Status *</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="membershipStatus" value="yes" required>
+                    <span>Yes</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="membershipStatus" value="no" required>
+                    <span>No</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group" id="membershipIdGroup" style="display: none;">
+                <label for="membershipId">Enter IEEE Membership ID *</label>
+                <input type="text" id="membershipId" name="membershipId" placeholder="e.g., IEEE12345678">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Interest / Message (Optional)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us what you'd like to learn or any special requests..."></textarea>
+              </div>
+
+              <div class="form-status" id="formStatus"></div>
+
+              <button type="submit" class="btn primary large">Complete Registration</button>
+            </form>
+          </div>
+
+          <div class="upcoming-events-info">
+            <h3>Upcoming Events</h3>
+            <div class="events-list">
+              <div class="event-item">
+                <strong>📅 Introduction to UI/UX</strong>
+                <p>Date: 24 January 2026 | Time: 7:00 PM – 8:30 PM</p>
+                <p class="fee">Fee: IEEE Members – Free | Non-IEEE – ₹15</p>
+              </div>
+              <div class="event-item">
+                <strong>📅 From Campus to Career</strong>
+                <p>Date: 01 February 2026 | Time: 7:00 PM – 8:00 PM</p>
+                <p class="fee">Fee: IEEE Members – Free | Non-IEEE – ₹20</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="section alt">
+      <div class="container">
+        <h2>Event Benefits</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">🎓</div>
+            <h4>E-Certificates</h4>
+            <p>Receive digital certificates upon completion of events</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">⭐</div>
+            <h4>KTU Activity Points</h4>
+            <p>Earn academic activity points recognized by KTU</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🤝</div>
+            <h4>Networking</h4>
+            <p>Connect with like-minded engineers and professionals</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💡</div>
+            <h4>Learn & Grow</h4>
+            <p>Develop new skills and expand your knowledge</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-box">
+          <h3>Questions about the events?</h3>
+          <p>Reach out to our team for more information</p>
+          <a href="contact.html" class="btn outline">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-section">
+        <h4>IEEE SB STM</h4>
+        <p>St. Thomas College of Engineering and Technology<br>Sivapuram P.O, Mattannur (via), Kannur - 670 702</p>
+        <p><strong>Email:</strong> <a href="mailto:ieeesb@stthomaskannur.ac.in">ieeesb@stthomaskannur.ac.in</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/ieeesbstm/" aria-label="Instagram" class="social-link" target="_blank" rel="noopener">📷</a>
+          <a href="#" aria-label="Twitter" class="social-link">𝕏</a>
+          <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 IEEE Student Branch — STM Kannur. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

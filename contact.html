@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us | IEEE SB STM</title>
+  <meta name="description" content="Contact IEEE Student Branch at St. Thomas College of Engineering and Technology, Kannur.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">IEEE SB STM</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about-ieee.html">About IEEE</a>
+        <a href="about-sb.html">About SB</a>
+        <a href="societies.html">Societies</a>
+        <a href="excom.html">ExCom</a>
+        <a href="events.html">Events</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Reach out anytime!</p>
+      </div>
+    </section>
+
+    <!-- CONTACT CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- CONTACT FORM -->
+          <div class="contact-form-section">
+            <h2>Send us a Message</h2>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input id="email" name="email" type="email" placeholder="your.email@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input id="subject" name="subject" type="text" placeholder="e.g., Membership Inquiry, Event Registration" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..."></textarea>
+              </div>
+              <div class="form-group">
+                <label for="category">Category (Optional)</label>
+                <select id="category" name="category">
+                  <option value="">Select a category...</option>
+                  <option value="membership">Membership Inquiry</option>
+                  <option value="event">Event Registration</option>
+                  <option value="society">Society Information</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="collaboration">Collaboration Proposal</option>
+                  <option value="feedback">Feedback/Suggestion</option>
+                </select>
+              </div>
+              <button class="btn primary" type="submit">Send Message</button>
+              <p class="form-status" id="formStatus" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="contact-info-section">
+            <h2>Contact Information</h2>
+
+            <div class="info-block">
+              <h3>📧 Email</h3>
+              <p><a href="mailto:ieeesb@stthomaskannur.ac.in">ieeesb@stthomaskannur.ac.in</a></p>
+              <p class="info-note">Response time: 24-48 hours</p>
+            </div>
+
+            <div class="info-block">
+              <h3>📍 Address</h3>
+              <p>IEEE Student Branch<br>
+                St. Thomas College of Engineering and Technology<br>
+                Sivapuram P.O<br>
+                Mattannur (via)<br>
+                Kannur - 670 702<br>
+                Kerala, India</p>
+            </div>
+
+            <div class="info-block">
+              <h3>👥 Branch Counsellor</h3>
+              <p><strong>Dr. Sreekesh Namboodiri T</strong><br>
+                Professor, Department of Electrical & Electronics<br>
+                <a href="mailto:ieeesb@stthomaskannur.ac.in">ieeesb@stthomaskannur.ac.in</a></p>
+            </div>
+
+            <div class="info-block">
+              <h3>🔗 Follow Us</h3>
+              <p>Stay connected on social media for updates and announcements:</p>
+              <div class="socials-large">
+                <a href="https://www.instagram.com/ieeesbstm/" class="social-link-large" target="_blank" rel="noopener">Instagram</a>
+                <a href="#" class="social-link-large">Twitter/X</a>
+                <a href="#" class="social-link-large">LinkedIn</a>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <h3>💬 Quick Links</h3>
+              <ul class="quick-links">
+                <li><a href="membership.html">Join IEEE</a></li>
+                <li><a href="events.html">Upcoming Events</a></li>
+                <li><a href="societies.html">Our Societies</a></li>
+                <li><a href="team.html">Meet the Team</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section alt">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>How do I become a member of IEEE SB STM?</summary>
+            <p>First, you need to become an IEEE member by joining at ieee.org/membership/join. Then, select IEEE Student Branch at St. Thomas College, Kannur as your local branch during the signup process.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What are the membership fees?</summary>
+            <p>IEEE Student membership has special discounted rates. The exact fee varies based on membership type and your location. Visit ieee.org/membership for current pricing.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>When are events typically held?</summary>
+            <p>Events are held throughout the academic year, typically on weekends and after college hours. Subscribe to our newsletter or follow Instagram for the latest event announcements.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I attend events without being a member?</summary>
+            <p>Most of our events are open to all students, but certain activities may be reserved for members. Check the event details or contact us for specific information.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How can I volunteer or lead activities?</summary>
+            <p>Contact us through this form or email ieeesb@stthomaskannur.ac.in to inquire about volunteer opportunities. Leadership roles are elected annually.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I get involved in a society?</summary>
+            <p>Visit the Societies page to learn about each society. Reach out to us to know how to join the societies you're interested in.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPUS MAP -->
+    <section class="section">
+      <div class="container">
+        <h2>Find Us on Campus</h2>
+        <p class="section-intro-text">IEEE SB STM is located at St. Thomas College of Engineering and Technology. For exact office location and visiting hours, please contact us via email.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-section">
+        <h4>IEEE SB STM</h4>
+        <p>St. Thomas College of Engineering and Technology<br>Sivapuram P.O, Mattannur (via), Kannur - 670 702</p>
+        <p><strong>Email:</strong> <a href="mailto:ieeesb@stthomaskannur.ac.in">ieeesb@stthomaskannur.ac.in</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/ieeesbstm/" aria-label="Instagram" class="social-link" target="_blank" rel="noopener">📷</a>
+          <a href="#" aria-label="Twitter" class="social-link">𝕏</a>
+          <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 IEEE Student Branch — STM Kannur. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
