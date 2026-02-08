@@ -317,7 +317,7 @@ body{
 <section id="newsection" class="section alt">
   <div class="container">
     <h2>New Section Title</h2>
-    <p>Your content here</p>
+    
   </div>
 </section>
 ```
@@ -442,5 +442,6 @@ This template is provided as-is for IEEE Student Branch use. Maintain attributio
 **Last Updated**: February 7, 2026
 
 Made with ❤️ for IEEE Student Branches worldwide.
-#   I E E E _ W e b s i t e  
+#   I E E E _ W e b s i t e 
+ 
  
